@@ -21,6 +21,9 @@ docker-compose up --build
 # for create database
 docker-compose run web rake db:create
 
+# for webpack complier
+docker-compose run web yarn install
+
 ```
 3. Other command useful
 ```bash
