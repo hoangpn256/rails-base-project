@@ -12,7 +12,14 @@
 
   <body>
     <%= render 'layouts/user/nav' %>
-    <%= yield %>
+    <%= render 'layouts/user/header' %>
+    <!-- Page content-->
+    <div class="container">
+        <div class="row">
+            <%= yield %>
+            <%= render 'layouts/user/sidebar' %>
+        </div>
+    </div>
     <%= render 'layouts/user/footer' %>
   </body>
 </html>
